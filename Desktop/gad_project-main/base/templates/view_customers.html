@@ -1,0 +1,68 @@
+<style>
+     .content-table thead tr{
+        background-color: #131313d6;
+        color: white;
+        text-align: left;
+        font-weight: bold;
+    }
+</style>
+<section class="content">
+    <div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-12">
+              
+    <div class="card">
+    <div class="card-header">
+    <h3 class="card-title">View customers</h3>
+    </div>
+    <!-- /.card-header -->
+            <div class="card-body">
+            <table id="example1" class="table table-bordered table-striped content-table" >
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>mothername</th>
+                    <th>email</th>
+                    <th>actions</th>
+                    
+                     
+                </tr>                         
+
+    </thead>
+                
+                <tbody>
+                    {% for customer in customers %}
+                    <tr>
+                        <td>{{customer.id}}</td>
+                        <td>{{customer.mothername}}</td>
+                        <td>{{customer.email}}</td>
+                        <td>{{customer.gender}}</td>
+                        <td>{{customer.birthday}}</td>
+                        <td>{{customer.bloodgroup}}</td>
+                       
+                        
+
+                        
+                        
+
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            
+            
+    </table>
+
+
+</div>
+
+
+</div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+</section>
